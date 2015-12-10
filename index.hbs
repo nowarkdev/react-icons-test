@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <title>Assurance</title>
+    <link href="/app.css?v={{cacheBustId}}" rel="stylesheet">
+    <link rel="stylesheet" href="//web.static.nowtv.com/navigation/1.0.3/global-navigation.css">
+</head>
+<body>
+    <div id="assurance-app">{{{html}}}</div>
+    <script src="//d2wy8f7a9ursnm.cloudfront.net/bugsnag-2.js"
+            data-apikey="{{BUGSNAG_API_KEY}}"></script>
+    <script>
+        window.__INITIAL_STATE__ = {{{initialState}}};
+    </script>
+    <script src="/app.bundle.js?v={{cacheBustId}}"></script>
+</body>
+</html>
